@@ -8,7 +8,7 @@ class TestLengthConversion(TestCase):
 
     def setUp(self):
         """
-        This method runs before wach test case
+        This method runs before each test case
         """
         self.client = Client()
         self.url = reverse("length:convert")
