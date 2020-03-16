@@ -1,9 +1,9 @@
 from django import forms
 
 
-class LengthConverterForms(form.Forms):
+class LengthConverterForm(forms.Form):
     MEASUREMENTS = (
-        ('Centimetre', 'Centimetre'),
+        ('centimetre', 'Centimetre'),
         ('metre', 'Metre'),
     )
     input_unit = forms.ChoiceField(choices=MEASUREMENTS)
