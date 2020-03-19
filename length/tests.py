@@ -38,4 +38,4 @@ class TestLengthConversion(TestCase):
         }
 
         response = self.client.get(self.url, data)
-        self.asserContains(response, 6125.511)
+        self.assertContains(response, 6125.511)
